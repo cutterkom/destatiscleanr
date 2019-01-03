@@ -1,0 +1,17 @@
+Package: destatiscleanr
+Type: Package
+Title: Imports and cleans data from official German statistical offices to jump-start the data analysis
+Version: 0.1.0
+Authors@R: person("Katharina", "Brunner", email = "mail@katharina-brunner.de", role = c("aut", "cre"))
+Description: Extracts political polling data from <http://wahlrecht.de>.  
+Depends: R (>= 3.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+  magrittr,
+	dplyr,
+	purrr,
+	readr,
+	stringr
+RoxygenNote: 6.1.1
