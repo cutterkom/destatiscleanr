@@ -26,7 +26,7 @@ clean_header <- function(df) {
   header <- df %>% dplyr::filter(row_number() < which.min(is.na(!!as.name(first_col))))
   df <- df %>% dplyr::filter(row_number() >= which.min(is.na(!!as.name(first_col))))
 
-  list_colnames <- purrr::map(1:nrow(header), function(i) {
+  list_colnames <<- purrr::map(1:nrow(header), function(i) {
     header %>%
       dplyr::filter(dplyr::row_number() == i) %>%
       dplyr::slice(.) %>%
@@ -42,9 +42,17 @@ clean_header <- function(df) {
     column_names <-purrr::map(1:lengths(list_colnames), function(i){
       paste(list_colnames[[1]][[i]], list_colnames[[2]][[i]], sep = "_")
     }) %>% tolower()
-  } else {
+  } else if (length(list_colnames) == 3) {
     column_names <- purrr::map(1:lengths(list_colnames), function(i){
       paste(list_colnames[[1]][[i]], list_colnames[[2]][[i]], list_colnames[[3]][[i]], sep = "_")
+    }) %>% tolower()
+  } else if (length(list_colnames) == 4) {
+    column_names <- purrr::map(1:lengths(list_colnames), function(i){
+      paste(list_colnames[[1]][[i]], list_colnames[[2]][[i]], list_colnames[[3]][[i]], list_colnames[[4]][[i]], sep = "_")
+    }) %>% tolower()
+  } else {
+    column_names <- purrr::map(1:lengths(list_colnames), function(i){
+      paste(list_colnames[[1]][[i]], list_colnames[[2]][[i]], list_colnames[[3]][[i]], list_colnames[[4]][[i]], list_colnames[[5]][[i]], sep = "_")
     }) %>% tolower()
   }
 
