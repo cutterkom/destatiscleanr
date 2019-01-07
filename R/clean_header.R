@@ -26,7 +26,7 @@ clean_header <- function(df) {
   header <- df %>% dplyr::filter(row_number() < which.min(is.na(!!as.name(first_col))))
   df <- df %>% dplyr::filter(row_number() >= which.min(is.na(!!as.name(first_col))))
 
-  list_colnames <<- purrr::map(1:nrow(header), function(i) {
+  list_colnames <- purrr::map(1:nrow(header), function(i) {
     header %>%
       dplyr::filter(dplyr::row_number() == i) %>%
       dplyr::slice(.) %>%
