@@ -56,7 +56,7 @@ The goal is to jump start the analysis of Destatis data. This comes with two cav
 
 ### Column names
 
-Be aware that the automatic renaming of columns doesn't work perfectly. Especially the column names are probably not as specific as you wish. The package combines multline headers to a unique column name, including a name and unit. So you can definitly start doing your analysis without any hassle immidiately. But you probably will have to adjust at least some column names.
+Be aware that the automatic renaming of columns doesn't work perfectly. The column names are probably not as specific as you wish. The package combines multline headers to a unique column name, including a name and unit. So you can definitly start doing your analysis without any hassle immidiately. It may be that you have to adjust at least some column names.
 
 ### Missing values
 
@@ -69,4 +69,8 @@ Possible reasons for missing values:
 
 ## More ressources
 
-The [package wiesbaden](https://github.com/sumtxt/wiesbaden) offers a way to get Destatis data directly from the database. Unfortunately, this is a paid service for the main database of Destatis. [Regionalstatistik.de](http://regionalstatistik.de), however, can be accessed as a free registered user. 
+The [package wiesbaden](https://github.com/sumtxt/wiesbaden) offers a way to get Destatis data directly from the database. ~~Unfortunately, this is a paid service for the main database of Destatis.~~ Destatis offers it API now [as a free service](https://www.destatis.de/DE/PresseService/Presse/Pressemitteilungen/2019/01/PD19_006_p001.html) (See documentation [here](https://www-genesis.destatis.de/genesis/misc/GENESIS-Webservices_Einfuehrung.pdf)). Just like [Regionalstatistik.de](http://regionalstatistik.de) it can be accessed now as a free registered user. 
+
+## To Do
+
+- more dynamic creation of `column_names` :roll_eyes:
