@@ -22,7 +22,7 @@ convert_columns_to_numeric <- function(df) {
     purrr::map_df(~gsub("^\\.$|^-$|^x$|^/$|^\\.\\.\\.$", "", .)) %>%
     purrr::map_df(~gsub("^\\+", "", .)) %>%
     purrr::map_df(~gsub(",", "\\.", .)) %>%
-    # if there are characters or a date, then do not convert to numeric
-    dplyr::mutate_if(~any(!grepl("[A-z]|[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{4}", .)), as.numeric)
+    # if there are characters or a date (daily, monthly), then do not convert to numeric
+    dplyr::mutate_if(~all(!grepl("[A-z]|[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{4}|\\/", .)), as.numeric)
   return(df)
 }
