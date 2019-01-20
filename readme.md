@@ -1,6 +1,8 @@
 # destatiscleanr
 
-[Webversion of Destatiscleaner](http://apps.katharinabrunner.de/destatiscleaner)
+[This package as an online tool](http://apps.katharinabrunner.de/destatiscleaner)
+
+---
 
 [Destatis](http://destatis.de) is the Federal Statistical Office of Germany. Of course, it publishes a lot of datasets containing a wide range of data, from area sizes to international econonomic indicators in its database called [Genesis](https://www-genesis.destatis.de/genesis/online).
 
@@ -77,4 +79,4 @@ The [package wiesbaden](https://github.com/sumtxt/wiesbaden) offers a way to get
 
 - more dynamic creation of `column_names` :roll_eyes:
 - Clever guessing of year/date column
-- Shiny app to offer it non r users
+- ~~Shiny app to offer it non r users~~
