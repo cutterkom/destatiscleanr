@@ -37,7 +37,9 @@ clean_header <- function(df) {
   # build columns names from mult-line header names
   # depending on the number of rows
   if (length(list_colnames) == 1) {
-    column_names <- unlist(list_colnames)
+    column_names <-purrr::map(1:lengths(list_colnames), function(i){
+      paste(list_colnames[[1]][[i]], sep = "_")
+    }) %>% tolower()
   } else if (length(list_colnames) == 2) {
     column_names <-purrr::map(1:lengths(list_colnames), function(i){
       paste(list_colnames[[1]][[i]], list_colnames[[2]][[i]], sep = "_")
