@@ -6,7 +6,7 @@
 
 [Destatis](http://destatis.de) is the Federal Statistical Office of Germany. Of course, it publishes a lot of datasets containing a wide range of data, from area sizes to international econonomic indicators in its database called [Genesis](https://www-genesis.destatis.de/genesis/online).
 
-Unfortunately, the downloadable `csv` files don't comply with common standards if a tidy, ready-to-use machine-readable dataset:
+Unfortunately, the downloadable `csv` files don't comply with common standards of a tidy, ready-to-use machine-readable dataset:
 
 * The tables have double, triple, quadruple, quintuple ... headers.
 * Every file includes copyright information on the end of the file.
