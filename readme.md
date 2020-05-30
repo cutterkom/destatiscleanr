@@ -4,7 +4,7 @@
 
 Update May 2020: This package is no longer needed. The Federal Statistical Office of Germany, [Destatis](http://destatis.de), listened to it's users: You can now download data as a flat file csv or use [an API](https://www-genesis.destatis.de/genesis/online?Menu=Webservice#abreadcrumb). 
 
-<blockquote class="twitter-tweet"><p lang="de" dir="ltr">Danke fürs Anschubsen <a href="https://twitter.com/cutterkom?ref_src=twsrc%5Etfw">@cutterkom</a> und für weitere Anregungen aus der Community <a href="https://twitter.com/hashtag/ddj?src=hash&amp;ref_src=twsrc%5Etfw">#ddj</a> und fürs Umsetzen <a href="https://twitter.com/destatis?ref_src=twsrc%5Etfw">@destatis</a> <a href="https://t.co/XIHG5Iml64">https://t.co/XIHG5Iml64</a></p>&mdash; Susanne Hagenkort-Rieger (@hagrie) <a href="https://twitter.com/hagrie/status/1266318843259092994?ref_src=twsrc%5Etfw">May 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="de" dir="ltr">Danke fürs Anschubsen <a href="https://twitter.com/cutterkom?ref_src=twsrc%5Etfw">@cutterkom</a> und für weitere Anregungen aus der Community <a href="https://twitter.com/hashtag/ddj?src=hash&amp;ref_src=twsrc%5Etfw">#ddj</a> und fürs Umsetzen <a href="https://twitter.com/destatis?ref_src=twsrc%5Etfw">@destatis</a> <a href="https://t.co/XIHG5Iml64">https://t.co/XIHG5Iml64</a></p>&mdash; Susanne Hagenkort-Rieger (@hagrie) <a href="https://twitter.com/hagrie/status/1266318843259092994?ref_src=twsrc%5Etfw">May 29, 2020</a></blockquote> 
 
 
 [This package as an online tool](http://apps.katharinabrunner.de/destatiscleaner)
