@@ -29,7 +29,7 @@ clean_header <- function(df) {
   list_colnames <- purrr::map(1:nrow(header), function(i) {
     header %>%
       dplyr::filter(dplyr::row_number() == i) %>%
-      dplyr::slice(.) %>%
+      #dplyr::slice(.) %>%
       c(., recursive=TRUE) %>%
       unname()
   })
